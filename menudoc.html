@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		#menu a{
+			text-decoration: none;
+			color:black;
+			padding-left: 10px;
+		}
+		#menu ul li ul {
+			
+			padding: 0px 20px;
+			
+			display: none;
+			position: absolute;
+			left:160px;
+			top:0;
+			background: green;
+			width: 150px;
+			
+		}
+		#menu li:hover a{
+			color: white;
+		}
+		#menu li:hover ul{
+			display: block;
+			padding: 0px 10px;
+		}
+		#menu > ul > li{
+			
+			list-style: none;
+			line-height: 50px;
+			padding: 0px 15px;
+			position: relative;
+			background: green;
+			width: 160px;
+			border-bottom: 1px solid white
+		}
+		#menu li ul li{
+		  	list-style:none;
+		}
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li><a href="#">Tin tức trong ngày</a>
+				 <ul>
+                 	<li><a href="">Link2.1</a></li>
+                 	<li><a href="">Link2.2</a></li>
+                 	<li><a href="">Link2.3</a></li>
+                 </ul> 
+			</li>
+			<li><a href="#">Bóng đá</a>
+                <ul>
+                 	<li><a href="">Link2.1</a></li>
+                 	<li><a href="">Link2.2</a></li>
+                 	<li><a href="">Link2.3</a></li>
+                 </ul> 
+			</li>
+			<li><a href="#">Thế giới</a>
+				 <ul>
+                 	<li><a href="">Link2.1</a></li>
+                 	<li><a href="">Link2.2</a></li>
+                 	<li><a href="">Link2.3</a></li>
+                 </ul> 
+			</li>
+			<li><a href="#">Thời trang</a>
+                <ul>
+                 	<li><a href="">Link4.1</a></li>
+                 	<li><a href="">Link4.2</a></li>
+                 	<li><a href="">Link4.3</a></li>
+                 </ul> 
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

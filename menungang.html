@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		#menu a{
+			text-decoration: none;
+			color:white;
+			padding-left: 10px;
+		}
+
+		#menu{
+			width: 600px;
+			height: 50px;
+			background: blue;
+			margin:auto;
+		}
+		#menu > ul > li{
+			float:left;
+			list-style: none;
+			line-height: 50px;
+			padding: 0px 15px;
+			position: relative;
+		}
+		#menu ul li ul {
+			background: black;
+			padding: 0px 20px;
+			position: absolute;
+			width: 150px;
+			display: none;
+			left:0;
+
+		}
+		#menu li:hover ul{
+			display: block;
+			padding: 0px 10px;
+		}
+		#menu li:hover{
+			background: yellow;
+		}
+		#menu li:hover a{
+			color: pink;
+		}
+		#menu li ul li {
+			list-style: none;
+			
+			
+
+		}
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li><a href="#">Link1</a></li>
+			<li><a href="#">Link2</a>
+                <ul>
+                 	<li><a href="">Link2.1</a></li>
+                 	<li><a href="">Link2.2</a></li>
+                 	<li><a href="">Link2.3</a></li>
+                 </ul> 
+			</li>
+			<li><a href="#">link3</a></li>
+			<li><a href="#">link4</a>
+                <ul>
+                 	<li><a href="">Link4.1</a></li>
+                 	<li><a href="">Link4.2</a></li>
+                 	<li><a href="">Link4.3</a></li>
+                 </ul> 
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
